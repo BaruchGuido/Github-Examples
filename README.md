@@ -16,6 +16,10 @@ code readme.md
 git status
 git add . 
 git commit -m "add readme file" 
+# We did not create a GitHub repo to push our code to. To do so, We need to create a repo on Github, by going to the website. Name the repo, the same way as our local repo and don't initialize it with a readme.md file as our local repo already exists.
+cd /workspaces/tmp/new-project
+git remote add origin https://github.com/<your-username>/<repository-name>.git
+git push -u origin main 
 ```
 
 
@@ -26,6 +30,10 @@ git commit -m "add readme file"
  ```sh
 mkdir tmp
 cd tmp
+# modify the files 
+git add .
+git commmit -m 'files updated'
+git push 
  ```
 
 
@@ -64,12 +72,18 @@ git status
 
 Commit, commit your code. It opens the commit message editor (editor that needs to be config prior). 
 ```sh
-git commit
+git commit #in this case a windows in the editor should open to write a message 
+# an alternative is 
+git commit -m "WRITE INFO CONCERNING THE COMMIT"
 ```
 Set the gloabl editor 
 ```sh
 git config --global core.editor emacs 
 ```
+
+### log 
+
+`git log` will show recent git commit to teh git tree. 
 
 
 ### Gitconfig file 
